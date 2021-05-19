@@ -12,7 +12,7 @@
       shell: "yum upgrade -y"
 
     - name: install java
-      shell: "yum install java-11-openjdk-devel -y"
+      shell: "yum install java-11 -y"
    
     - name: install jenkins
       shell: "yum install jenkins -y" 
