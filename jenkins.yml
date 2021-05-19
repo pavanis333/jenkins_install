@@ -9,10 +9,10 @@
       shell: sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
     - name: install java
-      shell: sudo yum upgrade
+      shell: "sudo yum upgrade -y"
 
     - name: install jenkins
-      shell: "sudo yum install jenkins java-11-openjdk-devel"
+      shell: "sudo yum install jenkins java-11-openjdk-devel -y"
 
     - name: reload
       shell: sudo systemctl daemon-reload
