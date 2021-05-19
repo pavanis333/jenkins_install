@@ -12,7 +12,7 @@
       shell: sudo yum upgrade
 
     - name: install jenkins
-      shell: sudo yum install jenkins java-11-openjdk-devel
+      shell: "sudo yum install jenkins java-11-openjdk-devel"
 
     - name: reload
       shell: sudo systemctl daemon-reload
